@@ -1,49 +1,29 @@
-# LowestScoreDropped
+# Lowest Score Dropped (Chapter 6 – Programming Challenge 11)
 
-A console-based C++ application that calculates student scores by dropping the lowest score in a set.  
-Developed using Visual Studio as part of a classroom assignment to demonstrate array manipulation, iteration, basic input validation and formatted output.
+A C++ program that prompts the user for five test scores, drops the lowest score, and calculates the average of the remaining four. This assignment demonstrates function design, parameter passing by reference, and modular programming.
 
----
+## Overview
+- Reads five validated integer test scores from the user.
+- Drops the lowest score from the set.
+- Calculates the average of the remaining four.
+- Uses three functions:
+  - `getScore(int& score)` — obtains and validates a test score.
+  - `calcAverage(int a, int b, int c, int d, int e)` — computes and displays the average of the top four.
+  - `findLowest(int a, int b, int c, int d, int e)` — identifies and returns the minimum score.
 
-## Project Overview
+## Core Logic
+- Each score is entered individually and validated to ensure it lies between 0 and 100.
+- The lowest score is determined by comparison operations across all five.
+- The average is computed as `(sum of scores − lowest) / 4.0`.
+- Results are displayed with two decimal places using `setprecision(2)`.
 
-This project lets the user input a list of scores (e.g., quiz or test grades), identifies and drops the lowest score, then computes and displays the adjusted average (and optionally other statistics). Key learning objectives included:
-- Using one-dimensional arrays to store data  
-- Iterating through arrays to compute sums, minimums and averages  
-- Validating user input to ensure the scores fall within a valid range  
-- Output formatting for readability (e.g., using `iomanip`)  
-- Applying C++ logic to real-world academic scoring scenarios
+## Input Validation
+- Rejects any score less than 0 or greater than 100.
+- Reprompts until a valid value is entered.
 
----
-
-## Features
-
-- Prompt the user for how many scores will be entered  
-- Accept each score and validate it (e.g., score >= 0, score <= maximum)  
-- Automatically find and remove the lowest score from further calculation  
-- Compute the average of the remaining scores  
-- Display results: original list, dropped score, new average  
-- Clear console output for easy reading  
-
-*(You can expand this section as you add extra features like percentiles, grade categories, or file I/O.)*
-
----
-
-## Technologies Used
-
-- **Language:** C++ (compatible with C++11 or later)  
-- **IDE:** Visual Studio 2022 (or Visual Studio 2019)  
-- **Version Control:** Git & GitHub  
-
----
-
-## Getting Started
-
-### Prerequisites
-- A Windows machine with Visual Studio installed and the “Desktop development with C++” workload.  
-- Or any OS/compiler that supports C++11 or later.
-
-### Clone the repository
-```bash
-git clone https://github.com/Javi1591/LowestScoreDropped.git
-cd LowestScoreDropped
+## Build & Run
+- Visual Studio (Windows): open the solution or create a Console App and add the source file, then **Build → Run**.
+- g++ (CLI):
+  ```bash
+  g++ -std=c++11 -O2 -o LowestScoreDropped nazarioCPP16.cpp
+  ./LowestScoreDropped
