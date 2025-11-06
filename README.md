@@ -5,7 +5,7 @@ Developed using Visual Studio as part of a classroom assignment to demonstrate a
 
 ---
 
-## 📘 Project Overview
+## Project Overview
 
 This project lets the user input a list of scores (e.g., quiz or test grades), identifies and drops the lowest score, then computes and displays the adjusted average (and optionally other statistics). Key learning objectives included:
 - Using one-dimensional arrays to store data  
@@ -16,7 +16,7 @@ This project lets the user input a list of scores (e.g., quiz or test grades), i
 
 ---
 
-## 🧩 Features
+## Features
 
 - Prompt the user for how many scores will be entered  
 - Accept each score and validate it (e.g., score >= 0, score <= maximum)  
@@ -29,7 +29,7 @@ This project lets the user input a list of scores (e.g., quiz or test grades), i
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - **Language:** C++ (compatible with C++11 or later)  
 - **IDE:** Visual Studio 2022 (or Visual Studio 2019)  
@@ -37,7 +37,7 @@ This project lets the user input a list of scores (e.g., quiz or test grades), i
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - A Windows machine with Visual Studio installed and the “Desktop development with C++” workload.  
